@@ -24,6 +24,17 @@ class Character{
         }
     }
     
+    var isAlive:Bool{
+        get{
+            if (hp<=0){
+                return false
+            }
+            else{
+                return true
+            }
+        }
+    }
+    
     init(startingHP: Int, startingAttackPower: Int){
         self.hp = startingHP
         self.attackPower = startingAttackPower
